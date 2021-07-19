@@ -1,0 +1,212 @@
+.brand-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    top: 62px;
+}
+
+.quot {
+    position: absolute;
+    width: 127px;
+    height: 92px;
+    left: 80%;
+    top: 20%;
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.person-infa {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #3D3D3D;
+    z-index: 1;
+}
+
+.person-infa h2 {
+    font-size: 24px;
+}
+
+.person-photo {
+    display: flex;
+    align-items: center;
+    margin-right: 47px;
+    border-radius: 50%;
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.tree {
+    margin-top: 30px;
+    border-top: 2px;
+    color: black;
+    width: 80%;
+}
+
+.Links {
+    display: flex;
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 119.19%;
+}
+
+.Link {
+    margin-left: 55px;
+}
+
+.Links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Link a {
+    text-decoration: none;
+    color: #6D6D6D;
+}
+
+
+/* АДАПТИВ */
+
+
+/* 576px */
+
+@media (max-width: 574px) {
+    .brand-icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 30px;
+        top: 48px
+    }
+    .person-photo img {
+        border-radius: 50%;
+        height: 164px;
+        width: 164px;
+    }
+    .person-photo {
+        margin-right: 0;
+    }
+    .person-infa {
+        justify-content: center;
+        margin-right: 23px;
+        margin-left: 23px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 132.69%;
+        text-align: center;
+        color: #3D3D3D;
+        z-index: 1;
+    }
+    .tree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin-top: 4px;
+    }
+    .Links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+        width: 250px;
+        margin-top: 0px;
+    }
+    .Link {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .quot {
+        position: absolute;
+        max-width: 49px;
+        max-height: 35px;
+        left: 70%;
+        top: 40%;
+        z-index: 0;
+    }
+}
+
+
+/* min-574-max768px */
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .person-infa {
+        font-size: 19px;
+    }
+    .person-photo img {
+        height: 150px;
+        width: 150px;
+    }
+    .tree {
+        margin-top: 15px;
+        max-width: 650px;
+    }
+    .Link {
+        margin-top: 30px;
+        font-size: 13px;
+    }
+    .quot {
+        width: 42.3px;
+        height: 31px;
+        left: 85%;
+        top: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .person-infa {
+        font-size: 20px;
+    }
+    .person-photo img {
+        height: 150px;
+        width: 150px;
+    }
+    .tree {
+        margin-top: 15px;
+        max-width: 570px;
+    }
+    .Link {
+        margin-top: 30px;
+        font-size: 13px;
+    }
+    .quot {
+        width: 42.3px;
+        height: 31px;
+        left: 77%;
+        top: 25%;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1066px) {
+    .person-infa {
+        font-size: 30px;
+    }
+}
+
+
+/* 1067 */
+
+@media (min-width: 1067px) and (max-width: 1344px) {
+    .person-infa {
+        font-size: 40px;
+    }
+    .tree {
+        width: 1020px;
+    }
+    .Link {
+        margin-right: 50px;
+    }
+}
